@@ -163,7 +163,25 @@ color: #FFFFFF;
     width: 240px;
     height: 190px;
 }
-
+.lil img
+{
+    margin-right: 100px;
+    margin-top: 80px;
+    width: 140px;
+    height: 250px;
+}
+.lil select
+{
+    position: relative;
+    left:  85px;
+    top: -420px;
+    width: 80px;
+   height: 25px;
+    background: #FFF7E1;
+border: 1px solid #8B7169;
+box-sizing: border-box;
+border-radius: 5px;
+}
 li p
 {
   font-family: 'Gilroy bold'; 
@@ -172,6 +190,36 @@ li p
   font-size: 20px;
   line-height: 30px;
   text-align: center;
+  margin-top: -10px;
+  margin-right: 50px;
+}
+li span
+{
+    font-family: 'Gilroy';  
+    
+}
+.cicrle_coffe
+{
+width: 70px;
+height: 70px;
+border-radius: 100px;   
+background: #8B7169;
+position: relative;
+top: -500px;
+left: 40px;
+
+}
+.cicrle_coffe p
+{
+    font-family: 'Gilroy bold'; 
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 42px;
+text-align: center; 
+padding: auto;  
+margin: auto;
+padding-top: 10px;
 }
 .h3
 {
@@ -226,6 +274,18 @@ font-size: 25px;
     text-align: center;
     list-style-type: none;
 }
+li .sale
+{
+    position: relative;
+    top: -485px;
+    right: 75px;
+    font-family: 'Gilroy'; 
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 22px;
+color: #8B7169;
+}
 .h4
 {
    margin-top: 150px;
@@ -237,6 +297,12 @@ font-size: 25px;
     font-weight: normal;
     font-size: 40px;
     line-height: 60px;
+}
+.product1 a
+{
+  float: right;  
+  margin-right: 220px;
+  margin-top: 20px;
 }
 .l7
 {
@@ -320,6 +386,14 @@ z-index: 1;
 height: 70px;
 background: #8B7169;
 transform: rotate(-180deg);
+border-radius: 100px;
+margin-top: 250px;
+
+
+}
+.circle_flex img
+{
+   margin-top: 26px;
 }
 .backgroud_image
 {
@@ -347,7 +421,6 @@ color: #FFFFFF;
     font-family: 'Gilroy'; 
 padding-left: 100px;
 padding-top: 20px;
-
 font-family: Abel;
 font-style: normal;
 font-weight: normal;
