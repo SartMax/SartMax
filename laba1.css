@@ -402,6 +402,23 @@ margin-top: 250px;
 height: 963px;
 margin-top: -550px;
 }
+.hren
+{
+    position: relative;
+    width: 300px;
+height: 76px;
+left: -250px;
+top: -305px;
+background: #8B7169;
+border-radius: 40px;
+font-family: 'Gilroy bold'; 
+font-style: normal;
+font-weight: normal;
+font-size: 25px;
+line-height: 32px;
+color: #FFFFFF;
+
+}
 .h5
 {
     font-family: 'Gilroy bold'; 
