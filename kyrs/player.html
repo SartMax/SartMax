@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Welcome</h1>
+
+    <header>
+    <nav>
+
+    </nav>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aperiam ducimus provident placeat doloribus nostrum iste culpa expedita ipsam quasi sapiente voluptatibus, assumenda cupiditate, maxime soluta. Dicta illum necessitatibus quasi!
+    </header>
+    <main>
+        <article>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, quo eos perferendis voluptatem ipsam libero, sint, aut rerum reprehenderit unde nesciunt pariatur deserunt praesentium inventore rem. Error velit enim quaerat!
+        </article>
+        <section>
+            
+        </section>
+    </main>
+    <aside>
+        <section>
+            <header>
+                <h2>Panael</h2>
+            </header>
+        </section>
+    </aside>
+    <footer>
+        <nav>
+            
+        </nav>
+        2123[]
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h2>Login</h2>
+    <a href="/">Перейти назад</a>
+    <form method="get" action="">
+        <input type="login" placeholder="login" value="f1f1f1">
+        <label for="login">Login</label>
+        <label for="Password">Password</label>
+        <input type="password" placeholder="password">
+        <button type="submit">Send</button>
+    </form>
+
+    <h2>File Form</h2>
+    <form action="" method="post">
+        <label for="avatar">Avatar</label>
+        <input type="file" name="avatar" accept="image/png, imge/jpeg">
+        <button type="submit">Send</button>
+    </form>
+
+    <h2>Color form</h2>
+    <form action="" method="post">
+        <input type="color" name="color" value="f1f1f1">
+        <label for="color"></label>
+    </form>
+
+    <h2>Numbers Form></h2>
+    <form action="">
+        <input type="number" name="age" id="" min="18" max="25" step="2">
+        <label for="age">Age</label>
+    </form>
+
+    <h2>Selected Form</h2>
+    <form action="">
+        <label for="phone">Choose your phone:</label>
+        <select name="phone" id="phone">
+            <option value="">--Your Phone--</option>
+            <option value="apple" selected>Apple</option>
+            <option value="samsung">Samsung</option>
+            <option value="nokie" disabled>Nokia</option>
+        </select>
+    </form>
+
+    <h2>Cheakbox Form</h2>
+    <form action="">
+        <input type="checkbox" name="cheakbox1">
+        <label for="cheakbox1">Yes</label>
+
+        <input type="checkbox" name="cheakbox2" checked>
+        <label for="cheakbox2">Yes</label>
+
+        <input type="checkbox" name="cheakbox3">
+        <label for="cheakbox3">Yes</label>
+    </form>
+
+    <h2>Radio Form</h2>
+    <form action="">
+        <input type="radio" name="radio" checked>
+        <label for="radio">Yes</label>
+        <input type="radio" name="radio">
+        <label for="radio">No</label>
+    </form>
+
+    <h2>Slider Form</h2>
+    <form action="">
+        <input type="range" name="volume" id="volume">
+        <output class="volue-output"></output>
+    </form>
+
+    <form action="">
+        
+        <textarea name="texarea" id="" cols="30" rows="12" placeholder="Type text...."></textarea>
+    </form>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Phone</th>
+            <th>Model</th>
+            <th>Price</th>
+        </tr>     
+    </thead>
+        <tbody>
+            <tr>
+                <td>Iphone</td>
+                <td>12</td>
+                <td>99</td>
+            </tr>
+            <tr>
+                <td>samsung</td>
+                <td>galexy</td> 
+                <td>100</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td>sum</td>
+                <td>199</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+        <span>Hello</span>
+        <span>Hello</span>
+        <div>Hello</div>
+        <div>Hello</div>
+
+        <h1>MY site</h1>
+        <p>Super Site</p>
+        <ul>
+            <li>Main Page</li>
+            <li>Contact</li>
+        </ul>
+
+        <h2>Popular movies</h2>
+        <img src="pict/kisspng-cafe-chocolate-covered-coffee-bean-espresso-5aeee25cddd876 2.png" width="100" height="100" alt="">
+
+        <h3>Article 1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus consequatur distinctio mollitia nulla quia assumenda, aspernatur delectus numquam, aliquam natus amet? Sed iure error, ad molestias rem quisquam dolorum illum.</p>
+        
+        <h3>Article 2</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem omnis eligendi ratione. Amet et eos quo possimus dignissimos facilis perspiciatis ea voluptate natus corporis, dicta, modi assumenda expedita rem sit?</p>
+
+        <ul>
+            <li>Main Page</li>
+            <li>Contact</li>
+        </ul>
+        <p>LOOOOOOL</p>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const volume = document.querySelector('#volume');
+        const output = document.querySelector('.volue-output');
+
+        output.textContent = volume.value;
+
+        volume.addEventListener('input', () => 
+        {
+            output.textContent = volume.value
+        });
+    </script>
+</body>
+</html>

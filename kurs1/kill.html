@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ctyle.css">
+</head>
+<body>
+    <style>
+        
+        *
+        {
+            font-size: 30px;
+        }
+        [random-attr]
+        {
+            color: gold;
+        }
+        div
+        {
+            color: #000;
+        }
+        div.color.text-color
+        {
+            color: blue;
+        }
+        .color
+        {
+            color: aqua;
+        }
+        span.color
+        {
+            color: green;
+        }
+    /* > вроженность на первом уровне */
+    /*  ~ прминить стили идущие после материнского */
+    /* + только первый элемент после материнского */
+    </style>
+    <h1>css selectirs</h1>
+    <div class="color text-color">First div</div>
+    <div class="color"> Second div</div>
+
+    <span class="color">First Span</span>
+    <span random-attr="my attr">Secondt Span</span>\
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</body>
+</html>
