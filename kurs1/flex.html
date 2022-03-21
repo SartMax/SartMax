@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .items
+        {
+            background-color: black;
+            /* display: flex; */
+            /* горизонтальное поз. */
+            /* justify-content:center;   */
+            height: 300px;
+            /* вертикальное поз. */
+            /* align-items: flex-start; */
+            /* выстраеивает элементы друг под дуругом */
+            /* flex-wrap: wrap; */
+            /* контент по центру */
+            /* align-content: center; */
+            /* flex-direction: column; */
+            display: grid;
+            /*Размеры элемента x x x x */
+            /* grid-template-columns: auto auto auto auto; */
+            /* функция repeat сокращение x x x x  */
+            grid-template-columns: repeat(4, 100Px);
+            /* куда изночально будет добавляться */
+            /* grid-auto-flow: column; */
+            /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+            /* mimax макс и мин одного элемента */
+            /* grid-template-columns: 1fr minmax(150px, 1fr) 1fr 1fr; */
+            /* по вертикали */
+            grid-template-rows: 100px auto;
+            /* авто задание всех размеров */
+            /* grid-auto-rows: 100px 30px 10px; */
+            /* 25% = 1fr */
+            /* отступы в грид горизонтально */
+            /* column-gap: 5px; */
+            /* отступ вертикально */
+            /* row-gap: 5px; */
+            /* сокращенная запись */
+            gap: 5px;
+            /* чтобы не тащил за собой другие элементы */
+            /* grid-auto-flow: dense; */
+            /* justify-content: space-evenly; */
+            /* align-content: end; */
+            /* сокращеная запись верхних двух */
+            place-content: center end;
+        }
+        .item
+        {
+            /* width: 100px;
+            height: 100px; */
+            /* margin-right: 5px;
+            margin-bottom: 5px; */
+        }
+        .red
+        {
+            background-color: red;
+            /* приоритеты размеров */
+            /* flex-grow: 2; */
+            /* игнорирование width */
+            /* flex-basis: 0; */
+            /* перетусовать элемента */
+            /* order: 3; */
+        }
+        .green
+        {
+            background-color: green;
+            /* flex-shrink: 0 ; */
+            /* flex-grow: 1;
+            flex-basis: 0; */
+            /* grow shrink basic */
+            /* flex: 3 0 0; */
+            /* order: 2; */
+        }
+        .yellow
+        {
+            background-color: yellow;
+            /* flex-grow: 1;
+            flex-basis: 0;
+            /* позиционирование отдельных элементов */
+            /* align-self: flex-end; */
+            /* выбор позиции */
+            /* grid-column: 7 / -1; */
+            /* вертикальное поз */
+            /* grid-row: 3 / span 3 ; */
+        }
+        .blue
+        {
+            background-color: blue;
+        }
+    </style>
+    <div class="items">
+        <div class="item red">1</div>
+        <div class="item green">2</div>
+        <div class="item yellow">3</div>
+        <div class="item blue">4</div>
+    </div>
+ 
+</body>
+</html>

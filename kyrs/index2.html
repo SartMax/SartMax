@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>адаптивная верстка</title>
+</head>
+<body>
+    <style>
+        html
+        {
+            font-size: 62.5%;
+        }
+        .item{
+            /* font-size: 200%; */
+            /* 1em = 100% */
+            /* 1 rem = 1em */
+            /* 16px = 100% */
+            /* font-size: 2em;  */
+            /* font-size: 2rem; */
+            /* font-size: 3px; */
+            font-size: 2rem;
+        }
+        /* Пиксели не адаптивны, поэтому лучше их не использовать */
+        /* На второй вложенности удваивается размер при еm */
+        /* rem тоже самое, но не удваивает */
+        .item
+        {
+            font-size: 6rem;
+        }
+    </style>
+    <h1>Helli</h1>
+    <p>hello2</p>
+    <div class="item">
+        kill
+        <div class="item2">
+            kill2
+        </div>
+    </div>
+</body>
+</html>

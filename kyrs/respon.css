@@ -1,0 +1,18 @@
+@media (max-width: 600px)
+{
+    header
+    {
+        background: #222;
+    }
+    section 
+    {
+        font-size: 5rem;
+    }
+}
+@media(max-width: 300px)
+{
+    header  
+    {
+        background: blue;
+    }
+}
