@@ -14,9 +14,9 @@ body{
     /*скрывает, что ушло за блоки  */
     overflow-x: hidden ;
 }
-h1
+input
 {
-
+    all: unset;
 }
 ul
 {
@@ -315,6 +315,133 @@ nav.nav-mobile
     background-color: black ;
 }
 
+.player
+{
+    position: relative;
+    width: 100%;
+
+}
+.player::after
+{
+    display: block;
+    content: '';
+    padding-top: 56.25%;
+}
+.player iframe
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.tabs-titles
+{
+    display: flex;
+    margin-top: 20px;
+
+}
+.tabs-titles>li
+{
+ padding-right: 45px;   
+ font-size: 20px;
+ cursor: pointer;
+}
+
+.tabs-titles li.active
+{
+    font-weight: 600;
+}
+.tabs
+{
+    margin-top: 21px;
+}
+.tabs p 
+{
+    color: white;
+}
+.tabs p:last-child
+{
+    padding-top: 24px;
+    color: #878787;
+}
+
+
+.login 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    flex-direction: column;
+}
+
+.login .form-container
+{
+    width: 556px;
+    height: auto;
+    background-color: #161515;
+    padding: 26px 70px 26px 70px;
+}
+
+.login .form-container>p:first-child
+{
+    text-align: center;
+    font-size: 24px;
+    color: #b8b8b8;
+}
+
+.login .form-container>form
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login .form-container>form>input{
+    height: 42px;
+    background-color: #404040;
+    margin-bottom: 24px;
+}
+.login .form-container>form>label
+{
+    font-size: 17px;
+    color: #3a3a3a;
+}
+.login .form-container>form>input[type="submit"]{
+    background-color: #ff501a;
+    width: 136px;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+    font-size: 20px; 
+    margin-top: 57px;
+    margin-bottom: 20px;
+}
+.login .form-container>p:last-child
+{
+    text-align: center;
+    font-size: 15px;
+    color: #747474;
+}
+.login .form-container>p:last-child>span
+{
+    text-align: center;
+    font-size: 15px;
+    color: #c1c1c1;
+}
+.login>p
+{
+    font-size: 15px;
+    color: #747474;
+    margin-top: 20px;
+}
+.login>p>span
+{
+    font-size: 15px;
+    color: #c1c1c1;
+}
+
 @media (min-width: 1200px)
 {
     nav.nav-desktop
@@ -433,59 +560,19 @@ nav.nav-mobile
     {
         justify-content: center;
     }
+    .login
+    {
+        margin-top: 70px;
+        height: auto;
+    }
+    .login .form-container
+    {
+        width: auto;
+        margin: auto;
+    }
 }
 @media(max-width: 1723px) {
     .default-container {
         padding: 0 2% 0 2%;
     }
-}
-.player
-{
-    position: relative;
-    width: 100%;
-
-}
-.player::after
-{
-    display: block;
-    content: '';
-    padding-top: 56.25%;
-}
-.player iframe
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-.tabs-titles
-{
-    display: flex;
-    margin-top: 20px;
-
-}
-.tabs-titles>li
-{
- padding-right: 45px;   
- font-size: 20px;
- cursor: pointer;
-}
-
-.tabs-titles li.active
-{
-    font-weight: 600;
-}
-.tabs
-{
-    margin-top: 21px;
-}
-.tabs p 
-{
-    color: white;
-}
-.tabs p:last-child
-{
-    padding-top: 24px;
-    color: #878787;
 }

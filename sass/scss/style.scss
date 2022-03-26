@@ -1,0 +1,138 @@
+$bgcolor: red;
+$color: #c1c1;
+$blockWidht: 20%;
+$border: 4px solid #123c;
+$nameFontSize: 1.1em;
+$someVar: some_class;
+// @mixim создание нескольких условий
+// include их подключение
+@mixin grid1($cols, $margin)
+{
+    float: left;
+    background: blue;
+    margin-right: $margin;
+    margin-bottom: $margin;
+    height: 100px;
+    @if($cols >= 5)
+    {
+        width: 100%;
+        margin-right: 0;
+    }
+    @else 
+    {
+        width: ((100% - (($cols-1) * $margin)) / $cols);
+    }
+
+    &:nth-child(#{$cols}n)
+    {
+        margin-right: 0;
+    }
+}
+@mixin  fontSize ($color, $fontW) {
+    font-size: $nameFontSize;
+    font-weight: $fontW;
+    font-family: Arial, sans-serif;
+    color: $color;
+}
+// неопредленное количество значений
+@mixin padd($padd...)
+{
+    padding: $padd;
+}
+
+@mixin link($link, $hover, $active, $visited) {
+    a{
+        color: $link;
+        &:hover
+    {
+        color: $hover;
+    }
+        &:active
+    {
+        color: $active;
+    }
+    @content;
+     }
+} 
+
+*
+{
+    padding: 0;
+    margin: 0;
+}
+.header
+{
+    @include link(#000, red, blue, green)
+    {
+        background: #000;
+
+        &:visited
+        {
+            color: #fafafa;
+        }
+    }
+}
+a
+{
+    @include link(#000, red, blue, green)
+}
+
+.block:not(.first)
+{
+    @include padd(20px 40px 10px 0px);
+    background: $bgcolor;
+    height: 200px;
+    margin-bottom: 20px;
+    width: $blockWidht;
+    border: $border;
+}
+.first
+{
+    background: $bgcolor;
+    height: 100px;
+    margin-bottom: 20px;
+}
+#central_block
+{
+    padding: 30px;
+    ul
+    {
+        list-style: none;
+        display: inline-block;
+    }
+    li
+    {
+        width: (100% / 3);
+        a
+        {
+            @include fontSize(blue, bold);
+// & добавляет псевдокласс
+            &:hover
+            {
+                color: red;
+            }
+        }
+    }
+
+}
+
+#grid
+{
+    float: left;
+    width: 100%;
+
+    > div
+    {
+        // @include grid1(4, 2%);
+    }
+}
+
+@for $i from 24 to 29
+{
+    .#{$someVar}-#{$i}
+    {
+        width: 50px + $i;
+        height: 50px + $i;
+    }
+}
+
